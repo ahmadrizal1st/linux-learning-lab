@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  linux-learning:
+    image: ubuntu:22.04
+    container_name: linux-learning-env
+    stdin_open: true
+    tty: true
+    working_dir: /workspace
+    volumes:
+      - ./workspace:/workspace
+      - ./scripts:/scripts
+    environment:
+      - TERM=xterm-256color
+    command: /bin/bash
