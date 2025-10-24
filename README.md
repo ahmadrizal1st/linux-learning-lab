@@ -98,7 +98,8 @@ When you first access the container, you'll be logged in as root. Here's how to 
 3. **Install sudo (if not available):**
    ```bash
    apt-get install -y sudo
-   # or
+   
+   # and
    apt-get install -y ubuntu-standard
    ```
 
